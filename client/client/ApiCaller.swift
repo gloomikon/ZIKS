@@ -26,7 +26,7 @@ extension AnyError: LocalizedError {
         case .userNotFound:
             return NSLocalizedString("User not found", comment: "User not found")
         case .forbidden:
-            return NSLocalizedString("You do not have rights to compelete this operation", comment: "User has no rights")
+            return NSLocalizedString("You do not have rights to complete this operation", comment: "User has no rights")
         }
     }
 }
@@ -78,7 +78,7 @@ class ApiCaller {
                 return
             }
             do {
-//                print(String(decoding: data, as: UTF8.self))
+                print(String(decoding: data, as: UTF8.self))
                 let parsed = try decoder.decode(type, from: data)
                 promise.success(parsed)
             }
@@ -137,7 +137,7 @@ class ApiCaller {
                 return
             }
             do {
-//                print(String(decoding: data, as: UTF8.self))
+                print(String(decoding: data, as: UTF8.self))
                 let parsed = try JSONDecoder().decode(type, from: data)
                 promise.success(parsed)
             }

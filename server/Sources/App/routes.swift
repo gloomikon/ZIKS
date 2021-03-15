@@ -1,21 +1,18 @@
 import Vapor
 
 let admin = User(
-    id: 1,
     login: "admin", /* "admin */
     password: "21232f297a57a5a743894a0e4a801fc3", /* "admin */
     rights: [.read, .write, .delete, .modifyRights]
 )
 
 let mzhurba = User(
-    id: 2,
     login: "mzhurba", /* "mzhurba" */
     password: "e1ea6fa2cb9705e965f13086681cfd67", /* "mzurba" */
     rights: [.read, .write]
 )
 
 let opiskun = User(
-    id: 1,
     login: "opiskun", /* "opiskun" */
     password: "614480e40d9a674ace7e60b5c2e39451", /* "opiskun" */
     rights: [.read]
@@ -180,7 +177,7 @@ func routes(_ app: Application) throws {
         return usersContainer.users
     }
 
-    // MARK: - Data relared routes
+    // MARK: - Data related routes
 
     /*
      * Returns all data strings

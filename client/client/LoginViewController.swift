@@ -9,7 +9,6 @@ struct User: Codable {
         case modifyRights = "MODIFY_RIGHTS"
     }
 
-    let id: UInt
     let login: String
     let password: String
     let rights: [Right]
