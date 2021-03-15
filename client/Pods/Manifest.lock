@@ -1,0 +1,20 @@
+PODS:
+  - Alamofire (5.4.0)
+  - BrightFutures (8.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - BrightFutures
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - BrightFutures
+
+SPEC CHECKSUMS:
+  Alamofire: 3b6a534a3df22db367e4dedeeca73d1ddfcf0e2f
+  BrightFutures: f8427b46feabaf73c5e71ace7d86d65dfbb47696
+
+PODFILE CHECKSUM: 53e44957b6a5aec20f855de5f08eae3959e28a6c
+
+COCOAPODS: 1.10.0
